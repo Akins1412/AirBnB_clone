@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" common attributes/methods that defines BaseModel
-"""
+""" common attributes/methods that defines BaseModel"""
 import models
 from uuid import uuid4
 from datetime import datetime
