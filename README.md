@@ -1,15 +1,20 @@
-Welcome to the AirBnB clone project!
+Airbnb Clone Project
 
-Before starting, please read the AirBnB concept page.
-First step: Write a command interpreter to manage your AirBnB objects.
+This Python implementation serves as an emulation of Airbnb, featuring a command-line interpreter (utilizing the cmd module) to oversee diverse functionalities.
+Command Interpreter (cmd module)
 
-This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
+The command interpreter facilitates user interaction with the Airbnb clone through a command-line interface, supporting commands for the management of listings, users, and bookings.
+Get Started
 
-Each task is linked and will help you to:
+To initiate the command-line interface, navigate to the repository and execute the command './console.py' after making it executable.
+ Guide
 
-    put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
-    create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
-    create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel
-    create the first abstracted storage engine of the project: File storage.
-    create all unittests to validate all our classes and storage engine
+The command interpreter recognizes the following commands:
+
+    'create': Generate a new user, listing, or booking. Example: Create User
+    'show': Exhibit information about users, listings, or bookings. Example: show listing 123
+    'update': Modify information related to users, listings, or bookings. Example: update listing 123 name 'new listing name'
+    'destroy': Eradicate a listing, user, or booking. Example: destroy user 456
+    'all': Display all instances of a class or specific instances based on filters.
+
 
