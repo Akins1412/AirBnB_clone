@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ common attributes/methods that defines BaseModel
 """
-
+import models
 from uuid import uuid4
 from datetime import datetime
 
@@ -10,7 +10,7 @@ class BaseModel:
 		common attributes/methods that defines BaseModel
 	"""
 
-def __init__(self):
+def __init__(self, *args, **kwargs):
 	"""Initialize new Basemodel
 	Args:
 	*args: list argument
