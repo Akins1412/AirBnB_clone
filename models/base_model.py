@@ -34,7 +34,8 @@ def __init__(self, *args, **kwargs):
 def __str__(self):
 	""" should print class name Id and dect
 	"""
-	return f"[self.__class__.__name__}] (self.id) {self.__dect__}"
+	name_clas = self.__class__.__name__
+        return "[{}] ({}) {}".format(name_cls, self.id, self.__dict__)
 
 def save(self):
 	""" updates the public instance attribute
@@ -48,7 +49,7 @@ def to_dict(self):
 	 adds key/value pair __class__ representing
 	"""
 	bj_dict = self.__dict__.copy()
-	bj_dict['__class__'] = self.__class__.__name__
-	bj_dict['created_at'] = self.created_at.isoformat()
-	bj_dict['updated_at'] = self.updated_at.isoformat()
+	bj_dict["__class__"] = self.__class__.__name__
+	bj_dict["created_at"] = self.created_at.isoformat()
+	bj_dict["updated_at"] = self.updated_at.isoformat()
 	return bj_dict	
