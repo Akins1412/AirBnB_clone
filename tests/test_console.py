@@ -12,12 +12,12 @@ class Test_Console(unittest.TestCase):
         """Tests the help command."""
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("help")
-        _s = """
+        _j = """
 Documented commands (type help <topic>):
 ========================================
 EOF  all  count  create  destroy  help  quit  show  update\n
 """
-        self.assertEqual(_s, f.getvalue())
+        self.assertEqual(_j, f.getvalue())
 
     # Test cases for quit
 
