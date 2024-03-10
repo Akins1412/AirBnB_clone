@@ -40,6 +40,7 @@ def save(self):
 	""" updates the public instance attribute
 	"""
 	self.updated_at=datetime.now()
+	models.storage.save()
 
 
 def to_dict(self):
